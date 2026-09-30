@@ -13,17 +13,23 @@ body{
 }
 
 h1{
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     text-align: left;
     padding: 10px;
     font-size: 12px;
     color: hotpink;
 }
 
+.Imagem{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 20%;
+}
+
 p{
-    text-align: center;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     font-family:"Comorant Garamond", serif;
     text-align: left;
     padding: 20px;
@@ -54,4 +60,19 @@ button:hover{
     display: flex;
     justify-content: center;
     gap: 16px;
+}
+
+@media(min-width: 768px){
+    .container{
+        justify-content: space-between;
+    }
+
+    .Imagem{
+        margin-top: 0;
+    }
+
+    h1{
+        width: 240px;
+    }
+
 }
